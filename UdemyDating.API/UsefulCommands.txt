@@ -1,0 +1,13 @@
+﻿# Runs app, watches and updates for any code changes
+dotnet watch run
+
+# Creates initial DB
+dotnet tool install --global dotnet-ef
+dotnet-ef
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+
+/************ Useful VS Tips ***********/
+Type prop + Tab + Tab for fast insertion of properties
+Type ctor + Tab + Tab for fast insertion of a constructor
